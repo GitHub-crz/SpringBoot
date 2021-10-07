@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>书籍列表</title>
+</head>
+<body>
+
+<hr>
+
+<h3>用户名：</h3><h3 th:text="${session.loginUser}"></h3>
+<h3 th:each="book:${list}" th:text="${book}"></h3>
+
+
+</body>
+</html>
